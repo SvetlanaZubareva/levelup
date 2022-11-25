@@ -74,13 +74,16 @@
 
 .button {
   border: none;
-  width: 500px;
   height: 50px;
   background-color: brown;
   font-size: 20px;
   line-height: 15px;
   color: beige;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 
 .section-composition-of-product--flex {
@@ -106,7 +109,7 @@
 }
 .main-content__section {
   text-align: center;
-  padding: 20px 0 50px;
+  
 }
 
 .section-composition-of-product {
@@ -244,7 +247,7 @@
  @media (max-width: 900px) {
   .main-content__section {
   width: 100%;
-  padding: 0 20% 0;
+
   }
 
   .section-promo2__img{
@@ -293,9 +296,7 @@
     width: 50px;
     height: 200px;
     }
-  .main-content__section{
-    padding: 0 40% 0;
-    }
+
     .section-promo__list-item{
       font-size: 25px;
     }
@@ -660,6 +661,10 @@ transition: opacity 0.2s ease-out;
       left: 600px;
     }
 
+    .main-content__section{
+      padding: 0 20% 0;
+    }
+
   
 }
 
@@ -723,4 +728,32 @@ transition: opacity 0.2s ease-out;
 .section-form__img{
   width: 200px;
 } 
+
+.button:hover{
+  background-color: #f19f0f;
+  border: #76c8ff 2px solid;
+}
+
+.button:active{
+  background-color: #18a3dd;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.section-composition-of-product__img{
+  height: 100px;
+  width: 100px;
+}
+
+
 

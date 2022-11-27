@@ -238,12 +238,11 @@ body {
   } 
 
 @media (max-width: 1500px) {
-
-  .fullscreen-bg__video {
-    display: none;
-}
 .section-promo__list-item{
   color: #000000;
+}
+.section-promo{
+  height: 630px;
 }
 } 
 
@@ -287,6 +286,9 @@ body {
   body{
     width: 1130px;
   }
+  .section-promo{
+    height: 630px;
+  }
   
 }
 
@@ -314,12 +316,16 @@ body {
 
 @media (max-width: 1500px) {
   .section-promo__img{
-    width: 50px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
+    }
+    .section-promo__list{
+      width: 400px;
     }
 
     .section-promo__list-item{
       font-size: 25px;
+      color: #fff;
     }
     .button {
       width: 200px;
@@ -335,21 +341,54 @@ body {
       padding-bottom: 20px;
     }
     .section-promo__h2 {
-      font-size: 40px;
+      font-size: 60px;
     }
     .section-promo__div{
       display: flex;
       justify-content: center;
+      top: 150px;
+      left: 30%;
     }
 
-    .section-promo__list-item{
-      font-size: 15px;
-    }
     .fullscreen-bg{
       padding: 0;
       background: linear-gradient(#fa7406, #f4f808);
     }
+    .section-promo{
+      height: 100%;
+      padding: 0;
+    }
 
+
+    .section-promo__h2 {
+      position: absolute;
+    }
+    .section-promo__div{
+      position: absolute;
+      z-index: 1;
+      display: flex;
+    }
+    .section-promo__button{
+      top: 470px;
+    }
+    .section-promo__button{
+      position: absolute;
+      z-index: 999;
+    }
+    .section-promo{
+      position: relative;
+      z-index: -999;
+      padding: 0;
+      height: 630px;
+    }
+    .main-content__section{
+      position: relative;
+      z-index: -9999;
+    }
+    body{
+      position: relative;
+      z-index: -99999;
+    }
    
 }
 
@@ -372,6 +411,8 @@ body {
   .section-promo{
     position: relative;
     z-index: -999;
+    padding: 0;
+    height: 800px;
   }
   .main-content__section{
     position: relative;
@@ -390,7 +431,6 @@ body {
   }
 
 .section-composition-of-product,
-.section-promo,
 .section-reviews,
 .section-promo2,
 .section-form{
@@ -674,14 +714,6 @@ transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
   @media (max-width: 1200px) {
 
-    .section-promo__button{
-      top: 600px;
-      left: 600px;
-    }
-/* .main-content__section{
-  padding: 0 20% 0;
-}   */
-
 html{
   width: max-content;
 }
@@ -721,11 +753,6 @@ html{
 
 
 
-.section-promo {
-  padding: 0;
-  height: 800px;
-}
-
 
 
 
@@ -734,12 +761,6 @@ html{
   .overlay{
     background: none;
   }
-
-  .section-promo__list-item{
-    color: #000000;
-  }
-
-
 
 }
 
